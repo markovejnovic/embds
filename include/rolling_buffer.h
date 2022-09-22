@@ -114,7 +114,9 @@ typedef enum {
         } \
 \
         const size_t next = (cbuff->tail_idx + 1) % cbuff->sz; \
-        *data = cbuff->data_buf[cbuff->tail_idx]; \
+        if (data != NULL) { \
+            *data = cbuff->data_buf[cbuff->tail_idx]; \
+        } \
         cbuff->tail_idx = next; \
 \
         return EMBDS_CBUFF_ERROR_SUCCESS; \
