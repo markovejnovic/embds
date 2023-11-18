@@ -1,3 +1,9 @@
+# [ARCHIVED]
+
+This project has become archived. I am not particularly interested in exploring
+the possibilities of this project as my use-case has shifted to Zephyr which
+already supports almost everything I need.
+
 # embds
 
 This repository is a collection of datastructures designed for embedded
